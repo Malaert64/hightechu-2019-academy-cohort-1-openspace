@@ -11,6 +11,7 @@ var w = dd.width = dim;
 var h = dd.height = dim;
 var strs = [];
 var nstrs = 1500;
+
 document.body.appendChild(dd);
 function rInt(s,b) {
   min=Math.ceil(s);max=Math.floor(b);

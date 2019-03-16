@@ -4,3 +4,8 @@
     top: 40vh;
     left: 50vw;
 }
+
+canvas {
+	width: 100vw;
+	height: 300vh;
+}
