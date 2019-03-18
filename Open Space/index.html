@@ -4,15 +4,13 @@
 <link rel="stylesheet" type="text/css" href="stars.css"/>
 <link rel="stylesheet" type="text/css" href="main.css"/>
 <link rel="stylesheet" type="text/css" href="button.css"/>
-<audio id="beep-one" preload="auto">
-    <source src="Audio/click_2.wav"></source>
-</audio>
 <title>Open Space</title>
 </head>
 <body>
 <img id="title" src="BWOpenSpaceLogoBig.png"/>
 </body>
-<div onmouseenter="playAudio()" class="button">
+
+<div onclick="playAudio(activate)" onmouseenter="playAudio(hover)" class="button">
       <span class="button__mask"></span>
       <span class="button__text">&nbsp Start &nbsp</span>
       <span class="button__text button__text--bis">Start</span>
@@ -20,7 +18,7 @@
 <br>
 <br>
 <br>
-<div onmouseenter="playAudio()"  class="button">
+<div onclick="playAudio(activate)" onmouseenter="playAudio(hover)"  class="button">
     <span class="button__mask"></span>
     <span class="button__text">Options</span>
     <span class="button__text button__text--bis">Options</span>

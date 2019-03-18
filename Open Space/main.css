@@ -9,3 +9,7 @@ canvas {
 	width: 100vw;
 	height: 230vh;
 }
+
+.button {
+	cursor: pointer;
+}

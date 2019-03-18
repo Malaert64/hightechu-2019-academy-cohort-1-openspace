@@ -5,11 +5,10 @@
 //   audio1.play();
 // }
 
+var hover = new Audio("Audio/multimedia_button_click_013.mp3");
+var activate = new Audio("Audio/multimedia_button_click_019.mp3");
 
-var media = document.getElementById("beep-one");
-
-
-function playAudio() {
+function playAudio(media) {
 	const playPromise = media.play();
 	if (playPromise !== undefined) {
     playPromise.then(_ => {
@@ -18,6 +17,7 @@ function playAudio() {
 			console.log(media)
     })
     .catch(error => {
+    	console.log("Error in playAudio")
       // Auto-play was prevented
       // Show paused UI.
     });
@@ -37,4 +37,4 @@ function playAudio() {
 //       // Show paused UI.
 //     });
 //   }
-// }
+ }
